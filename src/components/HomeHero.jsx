@@ -56,23 +56,33 @@ function HomeHero() {
 
     <div className="app-screen">
 
+      <div className="live-chip">
+  🟢 Live Fare Comparison
+</div>
+
+<h6 className="fw-bold mb-3 mt-2">
+  Jaipur → Airport
+</h6>
+
       <h6 className="fw-bold mb-3">
         Compare Travel
       </h6>
 
       <div className="mockup-input">
-        📍 Pickup Location
-      </div>
-
-      <div className="mockup-input">
-        🎯 Drop Location
-      </div>
+          <small>Pickup</small>
+          <div>📍 Jaipur Railway Station</div>
+        </div>
+        
+        <div className="mockup-input">
+          <small>Drop</small>
+          <div>🎯 Jaipur Airport</div>
+        </div>
 
       <button className="btn btn-primary w-100 mb-3">
         Compare Now
       </button>
 
-      <div className="fare-card">
+      {/* <div className="fare-card">
         <span>🚕 Uber</span>
         <strong>₹220</strong>
       </div>
@@ -90,7 +100,54 @@ function HomeHero() {
       <div className="fare-card">
         <span>🚌 RSRTC</span>
         <strong>₹40</strong>
-      </div>
+      </div> */}
+      <div className="fare-card">
+  <div className="provider-info">
+    <img src={uber} alt="Uber" className="provider-logo" />
+    <span>Uber</span>
+  </div>
+
+  <div>
+    <strong>₹220</strong>
+    <small className="d-block">12 min</small>
+  </div>
+</div>
+
+<div className="fare-card cheapest">
+  <div className="provider-info">
+    <img src={rapido} alt="Rapido" className="provider-logo" />
+    <span>Rapido</span>
+  </div>
+
+  <div>
+    <strong>₹180</strong>
+    <small className="d-block">10 min</small>
+  </div>
+  <div className="badge-tag">
+  Cheapest
+</div>
+
+  <div className="badge-tag">
+    Cheapest
+  </div>
+</div>
+
+<div className="fare-card">
+  <div className="provider-info">
+    <img src={ola} alt="Ola" className="provider-logo" />
+    <span>Ola</span>
+  </div>
+
+  <div>
+    <strong>₹250</strong>
+    <small className="d-block">11 min</small>
+  </div>
+</div>
+
+<div className="fare-card">
+        <span>🚌 RSRTC</span>
+        <strong>₹40</strong>
+      </div> 
 
     </div>
 
