@@ -14,14 +14,17 @@ function HomeHero() {
       <div className="container text-center pt-5">
 
                  <h1 className="hero-title">
-                 Compare Travel Options Across Multiple Providers
-                  <br />
-                  <span className="text-primary">in One Place.</span>
-                </h1>
-
-        <p className="hero-desc">
-           Compare cab, auto and bus providers in one place and choose the best option for your journey.
-         </p>
+                      One Search.
+                      <br />
+                      <span className="text-primary">
+                        Every Way to Travel.
+                      </span>
+                    </h1>
+                    
+                    <p className="hero-desc">
+                      Compare cabs, autos and buses across multiple providers in one place.
+                      Trains and flights coming soon.
+                    </p>
 
         <div className="d-flex justify-content-center gap-3 mt-4">
           <button className="btn btn-primary px-4 py-3">
@@ -79,8 +82,10 @@ function HomeHero() {
         </div>
 
       <button className="btn btn-primary w-100 mb-3">
-        Compare Now
+        Find Best Option →
       </button>
+      <h6 className="section-label">CABS</h6>
+
 
       {/* <div className="fare-card">
         <span>🚕 Uber</span>
@@ -127,9 +132,6 @@ function HomeHero() {
   Cheapest
 </div>
 
-  <div className="badge-tag">
-    Cheapest
-  </div>
 </div>
 
 <div className="fare-card">
@@ -143,11 +145,63 @@ function HomeHero() {
     <small className="d-block">11 min</small>
   </div>
 </div>
+<h6 className="section-label mt-4">BUSES</h6>
+<div className="fare-card best-value">
+  <div className="provider-info">
+    <span>🚌</span>
+    <span>RSRTC</span>
+  </div>
+
+  <div>
+    <strong>₹450</strong>
+    <small className="d-block">4h 30m</small>
+  </div>
+
+  <div className="badge-tag">
+    Best Value
+  </div>
+</div>
 
 <div className="fare-card">
+  <div className="provider-info">
+    <span>🚌</span>
+    <span>Volvo</span>
+  </div>
+
+  <div>
+    <strong>₹650</strong>
+    <small className="d-block">4h 10m</small>
+  </div>
+</div>
+
+<div className="fare-card">
+  <div className="provider-info">
+    <span>🚌</span>
+    <span>IntrCity</span>
+  </div>
+
+  <div>
+    <strong>₹590</strong>
+    <small className="d-block">4h 20m</small>
+  </div>
+</div>
+<div className="coming-soon-box">
+
+  <div className="coming-item">
+    🚆 Trains - Coming Soon
+  </div>
+
+  <div className="coming-item">
+    ✈️ Flights - Coming Soon
+  </div>
+
+</div>
+
+
+{/* <div className="fare-card">
         <span>🚌 RSRTC</span>
         <strong>₹40</strong>
-      </div> 
+      </div>  */}
 
     </div>
 
