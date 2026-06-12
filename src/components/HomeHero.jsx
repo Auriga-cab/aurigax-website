@@ -57,7 +57,6 @@ function HomeHero() {
 
   <div className="phone-frame">
 
-<div className="phone-notch">
     <div className="app-screen">
 
       <div className="live-chip">
@@ -85,12 +84,7 @@ function HomeHero() {
       <button className="btn btn-primary w-100 mb-3">
         Find Best Option →
       </button>
-      <div className="summary-card">
-  <strong>8+ Providers Compared</strong>
-  <p className="mb-0">
-    Cab • Auto • Bus
-  </p>
-</div>
+
       <div className="results-scroll">
       <h6 className="section-label">CABS</h6>
 
@@ -198,7 +192,7 @@ function HomeHero() {
   <div className="coming-item">
   🚆 Trains & ✈️ Flights Coming Soon
 </div>
-</div>
+
 </div>
 </div>
 
@@ -326,10 +320,11 @@ function HomeHero() {
 </div>
 
 
+
 <div className="onboard-strip">
 
   <div className="onboard-title flex ">
-   Supported Travel Providers
+   Supported Travel Providers →
   </div>
 
   <div className="logo-marquee mt-3">

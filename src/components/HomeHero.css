@@ -314,9 +314,3 @@ body.dark-theme .network-svg path {
   border-radius: 0 0 15px 15px;
   margin: -20px auto 15px;
 }
-.summary-card {
-  padding: 12px;
-  border-radius: 12px;
-  margin-bottom: 12px;
-  background: rgba(59,130,246,0.08);
-}
