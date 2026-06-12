@@ -84,6 +84,8 @@ function HomeHero() {
       <button className="btn btn-primary w-100 mb-3">
         Find Best Option →
       </button>
+
+      <div className="results-scroll">
       <h6 className="section-label">CABS</h6>
 
 
@@ -191,6 +193,7 @@ function HomeHero() {
   🚆 Trains & ✈️ Flights Coming Soon
 </div>
 
+</div>
 </div>
 
 

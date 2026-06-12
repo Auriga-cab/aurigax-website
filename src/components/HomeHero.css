@@ -194,8 +194,8 @@ body.dark-theme .network-svg path {
   background: var(--card-bg);
   border-radius: 30px;
   padding: 20px;
-  overflow: hidden;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .mockup-input {
@@ -289,4 +289,19 @@ body.dark-theme .network-svg path {
   background: rgba(148, 163, 184, 0.12);
   text-align: center;
   font-size: 13px;
+}
+.results-scroll {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding-right: 4px;
+}
+
+.results-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.results-scroll::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.4);
+  border-radius: 10px;
 }
