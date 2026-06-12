@@ -188,12 +188,8 @@ function HomeHero() {
 <div className="coming-soon-box">
 
   <div className="coming-item">
-    🚆 Trains - Coming Soon
-  </div>
-
-  <div className="coming-item">
-    ✈️ Flights - Coming Soon
-  </div>
+  🚆 Trains & ✈️ Flights Coming Soon
+</div>
 
 </div>
 
