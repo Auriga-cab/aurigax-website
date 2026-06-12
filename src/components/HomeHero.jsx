@@ -14,16 +14,16 @@ function HomeHero() {
 
       <div className="container text-center pt-5">
 
-        <h1 className="hero-title">
-          Skip the app chaos,
-          <br />
-          <span className="text-primary">Ride easy.</span>
-        </h1>
+                 <h1 className="hero-title">
+                  Compare Cabs, Autos & Buses
+                  <br />
+                  <span className="text-primary">in One Place.</span>
+                </h1>
 
         <p className="hero-desc">
-          Compare rides instantly and find the fastest
-          or cheapest option without switching apps.
-        </p>
+           Find the fastest and most affordable way to travel
+           without switching between multiple apps.
+         </p>
 
         <div className="d-flex justify-content-center gap-3 mt-4">
           <button className="btn btn-primary px-4 py-3">
@@ -155,7 +155,45 @@ function HomeHero() {
 
       </div>
 
-       
+       <div className="container py-5">
+  <h2 className="text-center fw-bold mb-5">
+    Compare Travel Options
+  </h2>
+
+  <div className="row g-4 text-center">
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h1>🚕</h1>
+        <h5 className="fw-bold">Cab Booking</h5>
+        <p>
+          Compare Uber, Ola and other ride providers instantly.
+        </p>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h1>🛺</h1>
+        <h5 className="fw-bold">Auto Rides</h5>
+        <p>
+          Find affordable auto options from multiple platforms.
+        </p>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h1>🚌</h1>
+        <h5 className="fw-bold">Bus Travel</h5>
+        <p>
+          Compare city bus options and choose the best route.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <div className="container text-center py-5">
   <h2 className="fw-bold mb-3">
@@ -177,18 +215,18 @@ function HomeHero() {
   <div className="row text-center">
 
     <div className="col-md-4">
-      <h4 className="fw-bold">Compare Prices</h4>
-      <p>Find the cheapest ride across multiple platforms.</p>
+      <h4 className="fw-bold">💰 Save More</h4>
+      <p>Compare cab, auto and bus fares instantly.</p>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">Save Time</h4>
-      <p>No need to switch between different ride apps.</p>
+      <h4 className="fw-bold">⚡ Faster Decisions</h4>
+      <p>See every option on one screen.</p>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">Ride Smarter</h4>
-      <p>Choose the best option based on price and ETA.</p>
+      <h4 className="fw-bold">🌍 Multiple Providers</h4>
+      <p>No need to switch between apps.</p>
     </div>
 
   </div>
@@ -228,6 +266,48 @@ function HomeHero() {
   </div>
 </div>
 
+<div className="container py-5">
+  <h2 className="text-center fw-bold mb-5">
+    Sample Travel Savings
+  </h2>
+
+  <div className="table-responsive">
+    <table className="table table-bordered text-center">
+      <thead>
+        <tr>
+          <th>Route</th>
+          <th>Cab</th>
+          <th>Bus</th>
+          <th>You Save</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Railway Station → Airport</td>
+          <td>₹220</td>
+          <td>₹40</td>
+          <td>₹180</td>
+        </tr>
+
+        <tr>
+          <td>Mansarovar → MI Road</td>
+          <td>₹180</td>
+          <td>₹30</td>
+          <td>₹150</td>
+        </tr>
+
+        <tr>
+          <td>Vaishali Nagar → Sindhi Camp</td>
+          <td>₹250</td>
+          <td>₹35</td>
+          <td>₹215</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
 <div className="onboard-strip">
 
   <div className="onboard-title flex ">
@@ -259,13 +339,14 @@ function HomeHero() {
 {/* Final CTA */}
 <div className="container text-center py-5 mt-5">
   <h2 className="fw-bold display-5">
-    Compare rides. Save money.
+   Why Pay More?
+
     <br />
-    Travel smarter.
+    Compare Every Travel Option Before You Book.
   </h2>
 
   <p className="text-muted mt-3">
-    Find the best ride option instantly across all major ride providers.
+   Compare cabs, autos and buses in one place and choose the smartest way to travel.
   </p>
 
   <button className="btn btn-primary btn-lg mt-3 px-5">
