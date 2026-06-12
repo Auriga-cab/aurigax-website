@@ -57,6 +57,7 @@ function HomeHero() {
 
   <div className="phone-frame">
 
+<div className="phone-notch">
     <div className="app-screen">
 
       <div className="live-chip">
@@ -84,7 +85,12 @@ function HomeHero() {
       <button className="btn btn-primary w-100 mb-3">
         Find Best Option →
       </button>
-
+      <div className="summary-card">
+  <strong>8+ Providers Compared</strong>
+  <p className="mb-0">
+    Cab • Auto • Bus
+  </p>
+</div>
       <div className="results-scroll">
       <h6 className="section-label">CABS</h6>
 
@@ -192,7 +198,7 @@ function HomeHero() {
   <div className="coming-item">
   🚆 Trains & ✈️ Flights Coming Soon
 </div>
-
+</div>
 </div>
 </div>
 
@@ -319,52 +325,11 @@ function HomeHero() {
   </div>
 </div>
 
-<div className="container py-5">
-  <h2 className="text-center fw-bold mb-5">
-    Sample Travel Savings
-  </h2>
-
-  <div className="table-responsive">
-    <table className="table table-bordered text-center">
-      <thead>
-        <tr>
-          <th>Route</th>
-          <th>Cab</th>
-          <th>Bus</th>
-          <th>You Save</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Railway Station → Airport</td>
-          <td>₹220</td>
-          <td>₹40</td>
-          <td>₹180</td>
-        </tr>
-
-        <tr>
-          <td>Mansarovar → MI Road</td>
-          <td>₹180</td>
-          <td>₹30</td>
-          <td>₹150</td>
-        </tr>
-
-        <tr>
-          <td>Vaishali Nagar → Sindhi Camp</td>
-          <td>₹250</td>
-          <td>₹35</td>
-          <td>₹215</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
 
 <div className="onboard-strip">
 
   <div className="onboard-title flex ">
-    Onboarded →
+   Supported Travel Providers
   </div>
 
   <div className="logo-marquee mt-3">

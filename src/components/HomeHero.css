@@ -307,3 +307,16 @@ body.dark-theme .network-svg path {
   background: rgba(100, 116, 139, 0.4);
   border-radius: 10px;
 }
+.phone-notch {
+  width: 120px;
+  height: 20px;
+  background: #111;
+  border-radius: 0 0 15px 15px;
+  margin: -20px auto 15px;
+}
+.summary-card {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  background: rgba(59,130,246,0.08);
+}
