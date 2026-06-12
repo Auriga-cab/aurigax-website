@@ -50,44 +50,48 @@ function HomeHero() {
 
       </div>
 
-      <div className="hero-demo-wrapper">
+      <div className="network-wrapper">
 
-  <div className="travel-mockup">
+  <div className="phone-frame">
 
-    <h5 className="fw-bold mb-3">
-      Compare Travel Options
-    </h5>
+    <div className="app-screen">
 
-    <div className="mockup-input">
-      📍 Jaipur Railway Station
-    </div>
+      <h6 className="fw-bold mb-3">
+        Compare Travel
+      </h6>
 
-    <div className="mockup-input">
-      🎯 Jaipur Airport
-    </div>
+      <div className="mockup-input">
+        📍 Pickup Location
+      </div>
 
-    <button className="btn btn-primary w-100 mb-3">
-      Compare Now
-    </button>
+      <div className="mockup-input">
+        🎯 Drop Location
+      </div>
 
-    <div className="fare-card">
-      <span>🚕 Uber</span>
-      <strong>₹220</strong>
-    </div>
+      <button className="btn btn-primary w-100 mb-3">
+        Compare Now
+      </button>
 
-    <div className="fare-card">
-      <span>🛺 Rapido</span>
-      <strong>₹180</strong>
-    </div>
+      <div className="fare-card">
+        <span>🚕 Uber</span>
+        <strong>₹220</strong>
+      </div>
 
-    <div className="fare-card">
-      <span>🚕 Ola</span>
-      <strong>₹250</strong>
-    </div>
+      <div className="fare-card">
+        <span>🛺 Rapido</span>
+        <strong>₹180</strong>
+      </div>
 
-    <div className="fare-card">
-      <span>🚌 RSRTC</span>
-      <strong>₹40</strong>
+      <div className="fare-card">
+        <span>🚕 Ola</span>
+        <strong>₹250</strong>
+      </div>
+
+      <div className="fare-card">
+        <span>🚌 RSRTC</span>
+        <strong>₹40</strong>
+      </div>
+
     </div>
 
   </div>
