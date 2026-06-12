@@ -1,4 +1,3 @@
-import phoneImg from "../assets/phone.png";
 
 import uber from "../assets/uber.svg";
 import rapido from "../assets/rapido.png";
@@ -15,14 +14,13 @@ function HomeHero() {
       <div className="container text-center pt-5">
 
                  <h1 className="hero-title">
-                  Compare Cabs, Autos & Buses
+                 Compare Travel Options Across Multiple Providers
                   <br />
                   <span className="text-primary">in One Place.</span>
                 </h1>
 
         <p className="hero-desc">
-           Find the fastest and most affordable way to travel
-           without switching between multiple apps.
+           Compare cab, auto and bus providers in one place and choose the best option for your journey.
          </p>
 
         <div className="d-flex justify-content-center gap-3 mt-4">
@@ -52,108 +50,49 @@ function HomeHero() {
 
       </div>
 
-      <div className="network-wrapper">
+      <div className="hero-demo-wrapper">
 
-        <svg
-          viewBox="0 0 1200 500"
-          className="network-svg"
-        >
+  <div className="travel-mockup">
 
-          <path
-            id="p1"
-            d="M600 430 Q180 300 120 120"
-          />
+    <h5 className="fw-bold mb-3">
+      Compare Travel Options
+    </h5>
 
-          <path
-            id="p2"
-            d="M600 430 Q320 220 280 90"
-          />
+    <div className="mockup-input">
+      📍 Jaipur Railway Station
+    </div>
 
-          <path
-            id="p3"
-            d="M600 430 Q600 220 600 60"
-          />
+    <div className="mockup-input">
+      🎯 Jaipur Airport
+    </div>
 
-          <path
-            id="p4"
-            d="M600 430 Q880 220 920 90"
-          />
+    <button className="btn btn-primary w-100 mb-3">
+      Compare Now
+    </button>
 
-          <path
-            id="p5"
-            d="M600 430 Q1020 300 1080 120"
-          />
+    <div className="fare-card">
+      <span>🚕 Uber</span>
+      <strong>₹220</strong>
+    </div>
 
-          <path
-            id="p6"
-            d="M600 430 Q1020 300 1080 120"
-          />
+    <div className="fare-card">
+      <span>🛺 Rapido</span>
+      <strong>₹180</strong>
+    </div>
 
-          {/* Moving circles */}
+    <div className="fare-card">
+      <span>🚕 Ola</span>
+      <strong>₹250</strong>
+    </div>
 
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="5s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p1" />
-            </animateMotion>
-          </circle>
+    <div className="fare-card">
+      <span>🚌 RSRTC</span>
+      <strong>₹40</strong>
+    </div>
 
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="4s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p2" />
-            </animateMotion>
-          </circle>
+  </div>
 
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="6s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p3" />
-            </animateMotion>
-          </circle>
-
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="5s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p4" />
-            </animateMotion>
-          </circle>
-
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="4s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p5" />
-            </animateMotion>
-          </circle>
-
-          <circle r="10" className="moving-dot">
-            <animateMotion
-              dur="4s"
-              repeatCount="indefinite"
-            >
-              <mpath href="#p6" />
-            </animateMotion>
-          </circle>
-
-        </svg>
-
-        <img
-          src={phoneImg}
-          alt=""
-          className="phone-img"
-        />
-
-      </div>
+</div>
 
        <div className="container py-5">
   <h2 className="text-center fw-bold mb-5">
@@ -215,18 +154,18 @@ function HomeHero() {
   <div className="row text-center">
 
     <div className="col-md-4">
-      <h4 className="fw-bold">💰 Save More</h4>
-      <p>Compare cab, auto and bus fares instantly.</p>
+      <h4 className="fw-bold">🚕 Compare Ride Apps</h4>
+      <p>Find the best cab or auto fare.</p>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">⚡ Faster Decisions</h4>
-      <p>See every option on one screen.</p>
+      <h4 className="fw-bold">🚌 Compare Bus Operators</h4>
+      <p>Choose the best route and price.</p>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">🌍 Multiple Providers</h4>
-      <p>No need to switch between apps.</p>
+      <h4 className="fw-bold">⚡ One Search</h4>
+      <p>Multiple providers, one result screen.</p>
     </div>
 
   </div>
