@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aurigax.com/sitemap.xml
+Sitemap: https://aurigax-website.vercel.app/sitemap.xml

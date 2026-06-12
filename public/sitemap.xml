@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://aurigax.com/</loc>
+    <loc>https://aurigax-website.vercel.app/</loc>
   </url>
 
   <url>
-    <loc>https://aurigax.com/about</loc>
+    <loc>https://aurigax-website.vercel.app/about</loc>
   </url>
 
   <url>
-    <loc>https://aurigax.com/contact</loc>
+    <loc>https://aurigax-website.vercel.app/contact</loc>
+  </url>
+
+  <url>
+    <loc>https://aurigax-website.vercel.app/blogs</loc>
   </url>
 
 </urlset>
