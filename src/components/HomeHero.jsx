@@ -1,0 +1,310 @@
+import phoneImg from "../assets/phone.png";
+
+import uber from "../assets/uber.svg";
+import rapido from "../assets/rapido.png";
+import ola from "../assets/ola.png";
+import namma from "../assets/namma.png";
+import quickride from "../assets/quickride.png";
+import bgarattaxi from "../assets/bharattaxi.png";
+import jugnoo from "../assets/jugnoo.png";
+
+function HomeHero() {
+  return (
+    <section className="hero-section">
+
+      <div className="container text-center pt-5">
+
+        <h1 className="hero-title">
+          Skip the app chaos,
+          <br />
+          <span className="text-primary">Ride easy.</span>
+        </h1>
+
+        <p className="hero-desc">
+          Compare rides instantly and find the fastest
+          or cheapest option without switching apps.
+        </p>
+
+        <div className="d-flex justify-content-center gap-3 mt-4">
+          <button className="btn btn-primary px-4 py-3">
+            Download now
+          </button>
+
+          <button className="btn btn-outline-dark px-4 py-3">
+            See how it works
+          </button>
+        </div>
+
+        {/* Logos */}
+
+        <div className="logo-row">
+
+             <img src={uber} alt="" />
+            
+             <img src={rapido} alt="" />
+             <img src={ola} alt="" />
+             <img src={namma} alt="" />
+             <img src={quickride} alt="" />
+             <img src={bgarattaxi} alt="" />
+             <img src={jugnoo} alt="" />
+
+        </div>
+
+      </div>
+
+      <div className="network-wrapper">
+
+        <svg
+          viewBox="0 0 1200 500"
+          className="network-svg"
+        >
+
+          <path
+            id="p1"
+            d="M600 430 Q180 300 120 120"
+          />
+
+          <path
+            id="p2"
+            d="M600 430 Q320 220 280 90"
+          />
+
+          <path
+            id="p3"
+            d="M600 430 Q600 220 600 60"
+          />
+
+          <path
+            id="p4"
+            d="M600 430 Q880 220 920 90"
+          />
+
+          <path
+            id="p5"
+            d="M600 430 Q1020 300 1080 120"
+          />
+
+          <path
+            id="p6"
+            d="M600 430 Q1020 300 1080 120"
+          />
+
+          {/* Moving circles */}
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="5s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p1" />
+            </animateMotion>
+          </circle>
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="4s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p2" />
+            </animateMotion>
+          </circle>
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="6s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p3" />
+            </animateMotion>
+          </circle>
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="5s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p4" />
+            </animateMotion>
+          </circle>
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="4s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p5" />
+            </animateMotion>
+          </circle>
+
+          <circle r="10" className="moving-dot">
+            <animateMotion
+              dur="4s"
+              repeatCount="indefinite"
+            >
+              <mpath href="#p6" />
+            </animateMotion>
+          </circle>
+
+        </svg>
+
+        <img
+          src={phoneImg}
+          alt=""
+          className="phone-img"
+        />
+
+      </div>
+
+       
+
+<div className="container text-center py-5">
+  <h2 className="fw-bold mb-3">
+    Why Choose AurigaX?
+  </h2>
+
+  <p
+    className="mx-auto text-muted"
+    style={{ maxWidth: "800px" }}
+  >
+    AurigaX helps you compare ride options from multiple
+    providers in one place. Save time, reduce costs,
+    and choose the best ride instantly without switching
+    between different apps.
+  </p>
+</div>
+
+<div className="container py-5">
+  <div className="row text-center">
+
+    <div className="col-md-4">
+      <h4 className="fw-bold">Compare Prices</h4>
+      <p>Find the cheapest ride across multiple platforms.</p>
+    </div>
+
+    <div className="col-md-4">
+      <h4 className="fw-bold">Save Time</h4>
+      <p>No need to switch between different ride apps.</p>
+    </div>
+
+    <div className="col-md-4">
+      <h4 className="fw-bold">Ride Smarter</h4>
+      <p>Choose the best option based on price and ETA.</p>
+    </div>
+
+  </div>
+</div>
+
+<div className="container py-5">
+  <h2 className="text-center fw-bold mb-5">
+    How It Works ?
+  </h2>
+
+  <div className="row text-center g-4">
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h3>1️⃣</h3>
+        <h5 className="fw-bold">Enter Destination</h5>
+        <p>Choose your pickup and drop location.</p>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h3>2️⃣</h3>
+        <h5 className="fw-bold">Compare Options</h5>
+        <p>View fares and ETAs from multiple providers.</p>
+      </div>
+    </div>
+
+    <div className="col-md-4">
+      <div className="shadow-sm p-4 rounded h-100">
+        <h3>3️⃣</h3>
+        <h5 className="fw-bold">Book Instantly</h5>
+        <p>Select the best ride and continue to booking.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div className="onboard-strip">
+
+  <div className="onboard-title flex ">
+    Onboarded →
+  </div>
+
+  <div className="logo-marquee mt-3">
+    <div className="logo-track">
+
+      <img src={uber} alt="Uber" />
+      <img src={rapido} alt="Rapido" />
+      <img src={ola} alt="Ola" />
+      <img src={namma} alt="Namma" />
+      <img src={quickride} alt="QuickRide" />
+      <img src={jugnoo} alt="Jugnoo" />
+
+      {/* Duplicate for smooth loop */}
+      <img src={uber} alt="Uber" />
+      <img src={rapido} alt="Rapido" />
+      <img src={ola} alt="Ola" />
+      <img src={namma} alt="Namma" />
+      <img src={quickride} alt="QuickRide" />
+      <img src={jugnoo} alt="Jugnoo" />
+
+    </div>
+  </div>
+
+</div>
+{/* Final CTA */}
+<div className="container text-center py-5 mt-5">
+  <h2 className="fw-bold display-5">
+    Compare rides. Save money.
+    <br />
+    Travel smarter.
+  </h2>
+
+  <p className="text-muted mt-3">
+    Find the best ride option instantly across all major ride providers.
+  </p>
+
+  <button className="btn btn-primary btn-lg mt-3 px-5">
+    Get Started
+  </button>
+</div>
+{/* Stats */}
+{/* <div className="container py-5">
+  <div className="row text-center">
+
+    <div className="col-md-3">
+      <h1 className="fw-bold">500K+</h1>
+      <p>Users</p>
+    </div>
+
+    <div className="col-md-3">
+      <h1 className="fw-bold">10+</h1>
+      <p>Partners</p>
+    </div>
+
+    <div className="col-md-3">
+      <h1 className="fw-bold">25+</h1>
+      <p>Cities</p>
+    </div>
+
+    <div className="col-md-3">
+      <h1 className="fw-bold">1M+</h1>
+      <p>Searches</p>
+    </div>
+
+  </div>
+</div> */}
+
+</section>
+
+  
+    
+  );
+  
+}
+
+export default HomeHero;

@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   THEME VARIABLES
+========================= */
+
+body.light-theme {
+  --bg-color: #ffffff;
+  --text-color: #111827;
+  --card-bg: #ffffff;
+  --footer-bg: #000000;
+  --secondary-text: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+body.dark-theme {
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
+  --card-bg: #1e293b;
+  --footer-bg: #111827;
+  --secondary-text: #cbd5e1;
+  --border-color: #374151;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* =========================
+   COMMON CARDS
+========================= */
+
+.theme-card,
+.feature-card,
+.team-card,
+.contact-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav-btn {
+  transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-wrapper {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+  background: var(--footer-bg);
+  color: var(--text-color);
+}
+
+.footer-text {
+  color: var(--secondary-text);
+}
+
+.footer-divider {
+  border-color: var(--border-color);
+}
+
+/* =========================
+   TEXT COLORS
+========================= */
+
+.secondary-text {
+  color: var(--secondary-text);
+}
+
+.footer-link {
+  color: #ffffff;   /* always white */
+  font-weight: 500;
+  cursor: default;  /* pointer remove optional */
+  transition: none; /* no hover animation */
+}
+
+/* IMPORTANT: no hover effect */
+.footer-link:hover {
+  color: #ffffff;   /* same as normal */
+}
+
+.navbar-dark-blue {
+  background: linear-gradient(90deg, #081e3f, #09122b);
+  color: white;
+}
+
+/* faqSection */
+.accordion-item {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+.accordion-button {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--card-bg);
+  color: #0ea5e9;
+}
+
+.accordion-body {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+/* ----------- */
