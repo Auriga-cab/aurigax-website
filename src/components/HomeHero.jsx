@@ -6,6 +6,11 @@ import namma from "../assets/namma.png";
 import quickride from "../assets/quickride.png";
 import bgarattaxi from "../assets/bharattaxi.png";
 import jugnoo from "../assets/jugnoo.png";
+import rsrtc from "../assets/rsrtc.jpg";
+import volvo from "../assets/volvo.svg";
+import intrcity from "../assets/intrcity.png";
+import redbus from "../assets/redbus.png";
+
 
 function HomeHero() {
   return (
@@ -264,7 +269,7 @@ function HomeHero() {
   </p>
 </div>
 
-<div className="container py-5 g-4">
+<div className="container py-5 g-5">
   <div className="row text-center">
 
     <div className="col-md-4">
@@ -369,10 +374,14 @@ function HomeHero() {
           🚌 Bus Operators
         </h4>
 
-        <p>RSRTC</p>
-        <p>Volvo</p>
-        <p>IntrCity</p>
-        <p className="mb-0">RedBus Partners</p>
+        <div className="logo-track-static">
+
+  <img src={rsrtc} alt="RSRTC" />
+  <img src={volvo} alt="Volvo" />
+  <img src={intrcity} alt="IntrCity" />
+  <img src={redbus} alt="RedBus" />
+
+</div>
 
       </div>
     </div>
