@@ -38,7 +38,7 @@ function HomeHero() {
 
         {/* Logos */}
 
-        <div className="logo-row">
+        {/* <div className="logo-row">
 
              <img src={uber} alt="" />
             
@@ -49,7 +49,7 @@ function HomeHero() {
              <img src={bgarattaxi} alt="" />
              <img src={jugnoo} alt="" />
 
-        </div>
+        </div> */}
 
       </div>
 
@@ -319,33 +319,68 @@ function HomeHero() {
   </div>
 </div>
 
+{/* Supported Travel  */}
 
+<div className="container py-5">
 
-<div className="onboard-strip">
+  <h2 className="text-center fw-bold mb-5">
+    Supported Travel Providers
+  </h2>
 
-  <div className="onboard-title flex ">
-   Supported Travel Providers →
+  <div className="row g-4">
+
+    <div className="col-lg-6">
+      <div className="stat-card h-100 text-center">
+
+        <h4 className="fw-bold mb-4">
+          🚕 Ride Apps
+        </h4>
+
+        <div className="logo-track-static">
+
+          <img src={uber} alt="Uber" />
+          <img src={rapido} alt="Rapido" />
+          <img src={ola} alt="Ola" />
+          <img src={namma} alt="Namma" />
+          <img src={quickride} alt="QuickRide" />
+          <img src={jugnoo} alt="Jugnoo" />
+
+        </div>
+
+      </div>
+    </div>
+
+    <div className="col-lg-6">
+      <div className="stat-card h-100 text-center">
+
+        <h4 className="fw-bold mb-4">
+          🚌 Bus Operators
+        </h4>
+
+        <p>RSRTC</p>
+        <p>Volvo</p>
+        <p>IntrCity</p>
+        <p className="mb-0">RedBus Partners</p>
+
+      </div>
+    </div>
+
   </div>
 
-  <div className="logo-marquee mt-3">
-    <div className="logo-track">
+  <div className="text-center mt-5">
 
-      {/* <img src={uber} alt="Uber" />
-      <img src={rapido} alt="Rapido" />
-      <img src={ola} alt="Ola" />
-      <img src={namma} alt="Namma" />
-      <img src={quickride} alt="QuickRide" />
-      <img src={jugnoo} alt="Jugnoo" /> */}
+    <h4 className="fw-bold mb-3">
+      🚀 Coming Soon
+    </h4>
 
-      {/* Duplicate for smooth loop */}
-      <img src={uber} alt="Uber" />
-      <img src={rapido} alt="Rapido" />
-      <img src={ola} alt="Ola" />
-      <img src={namma} alt="Namma" />
-      <img src={quickride} alt="QuickRide" />
-      <img src={jugnoo} alt="Jugnoo" />
+    <span className="badge bg-secondary me-2">
+      🚆 Trains
+    </span>
 
-    </div>
+    <span className="badge bg-secondary">
+      ✈️ Flights
+    </span>
+
   </div>
 
 </div>
