@@ -37,15 +37,29 @@ function Footer() {
 
         <div className="d-flex gap-4 mt-4 fs-4">
 
-          <FaXTwitter />
+         <div className="d-flex gap-4 mt-4 fs-4">
 
-          <FaInstagram />
+  <a href="#" className="footer-social">
+    <FaXTwitter />
+  </a>
 
-          <FaLinkedin />
+  <a href="#" className="footer-social">
+    <FaInstagram />
+  </a>
 
-          <FaRedditAlien />
+  <a href="#" className="footer-social">
+    <FaLinkedin />
+  </a>
 
-          <FaYoutube />
+  <a href="#" className="footer-social">
+    <FaRedditAlien />
+  </a>
+
+  <a href="#" className="footer-social">
+    <FaYoutube />
+  </a>
+
+</div>
 
         </div>
 

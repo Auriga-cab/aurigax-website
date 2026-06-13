@@ -189,3 +189,22 @@ body {
 .stat-card h2 {
   font-size: 2rem;
 }
+
+.footer-social {
+  color: var(--text-color);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.footer-social:hover {
+  color: #2563eb;
+  transform: translateY(-3px);
+}
+body.light-theme .footer-social {
+  color: #111827;
+}
+
+body.dark-theme .footer-social {
+  color: #ffffff;
+}
+
