@@ -1,4 +1,16 @@
-<footer className="footer-section pt-5 pb-3 mt-5">
+import { Link } from "react-router-dom";
+import React from "react";
+import {
+  FaXTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa6";
+import { FaRedditAlien } from "react-icons/fa";
+
+function Footer() {
+  return (
+    <footer className="footer-section pt-5 pb-3 mt-5">
   <div className="container">
 
     <div className="row gy-4">
@@ -162,3 +174,7 @@
 
   </div>
 </footer>
+  );
+}
+
+export default Footer;
