@@ -7,7 +7,7 @@ import quickride from "../assets/quickride.png";
 import bgarattaxi from "../assets/bharattaxi.png";
 import jugnoo from "../assets/jugnoo.png";
 import rsrtc from "../assets/rsrtc.jpg";
-import volvo from "../assets/volvo.svg";
+import volvo from "../assets/volvo.png";
 import intrcity from "../assets/intrcity.png";
 import redbus from "../assets/redbus.png";
 

@@ -1,109 +1,164 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import {
-  FaXTwitter,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa6";
-import { FaRedditAlien } from "react-icons/fa";
+<footer className="footer-section pt-5 pb-3 mt-5">
+  <div className="container">
 
-function Footer() {
-  return (
-    <footer className="footer-section pt-5 pb-3 mt-5">
-      <div className="container">
-        <div className="row">
+    <div className="row gy-4">
 
-          {/* Left Section */}
-          <div className="col-md-5 mb-4">
-            <h1
-              className="fw-bold mb-3"
-              style={{ color: "#2563eb" }}
-            >
-              AurigaX
-            </h1>
+      {/* Brand */}
+      <div className="col-lg-4">
 
-            <p className="footer-text">
-              Compare rides, find the best prices,
-              <br />
-              and travel smarter with AurigaX.
-            </p>
+        <h2
+          className="fw-bold mb-3"
+          style={{ color: "#2563eb" }}
+        >
+          AurigaX
+        </h2>
 
-            <button className="btn btn-primary mt-2">
-              Download Now
-            </button>
+        <p className="footer-text">
+          Compare cabs, buses and travel providers
+          in one place. Save time, compare fares
+          and travel smarter with AurigaX.
+        </p>
 
-            <div className="d-flex gap-4 mt-4 fs-4">
-              <FaXTwitter />
-              <FaInstagram />
-              <FaLinkedin />
-              <FaRedditAlien />
-              <FaYoutube />
-            </div>
-          </div>
+        <button className="btn btn-primary mt-2">
+          Compare Providers
+        </button>
 
-          {/* Middle Section */}
-          {/* Middle Section */}
-<div className="col-md-3 mb-4">
-  <ul className="list-unstyled">
-  <li className="mb-3">
-    <Link to="/about" className="footer-link text-decoration-none">
-      About
-    </Link>
-  </li>
+        <div className="d-flex gap-4 mt-4 fs-4">
 
-  <li className="mb-3">
-    <Link to="/contact" className="footer-link text-decoration-none">
-      Contact
-    </Link>
-  </li>
+          <FaXTwitter />
 
- <li className="mb-3">
-  <Link
-    to="/blogs"
-    className="footer-link text-decoration-none"
-  >
-    Blogs
-  </Link>
-</li>
+          <FaInstagram />
 
-  <li className="mb-3">
-    <a
-      href="#"
-      className="footer-link text-decoration-none"
-    >
-      Careers
-    </a>
-  </li>
-</ul>
-</div>
+          <FaLinkedin />
 
-{/* Right Section */}
-<div className="col-md-4 mb-4">
-  <ul className="list-unstyled">
-    <li className="mb-3">
-  <Link to="/terms" className="footer-link">
-    Terms of Service
-  </Link>
-</li>
-   <li className="mb-3">
-  <Link to="/privacy-policy" className="footer-link">
-    Privacy Policy
-  </Link>
-</li>
-    <li className="mb-3 footer-link">Refunds & Cancellation</li>
-  </ul>
-</div>
+          <FaRedditAlien />
+
+          <FaYoutube />
+
         </div>
 
-        <hr className="footer-divider" />
-
-        <p className="footer-text mb-0">
-          © 2026 AurigaX Technologies Pvt. Ltd. All Rights Reserved
-        </p>
       </div>
-    </footer>
-  );
-}
 
-export default Footer;
+      {/* Company */}
+      <div className="col-lg-2 col-md-4">
+
+        <h5 className="fw-bold mb-3">
+          Company
+        </h5>
+
+        <ul className="list-unstyled">
+
+          <li className="mb-2">
+            <Link
+              to="/about"
+              className="footer-link text-decoration-none"
+            >
+              About
+            </Link>
+          </li>
+
+          <li className="mb-2">
+            <Link
+              to="/blogs"
+              className="footer-link text-decoration-none"
+            >
+              Blogs
+            </Link>
+          </li>
+
+          <li className="mb-2">
+            <Link
+              to="/contact"
+              className="footer-link text-decoration-none"
+            >
+              Contact
+            </Link>
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Product */}
+      <div className="col-lg-3 col-md-4">
+
+        <h5 className="fw-bold mb-3">
+          Product
+        </h5>
+
+        <ul className="list-unstyled">
+
+          <li className="mb-2 footer-link">
+            Compare Cabs
+          </li>
+
+          <li className="mb-2 footer-link">
+            Compare Buses
+          </li>
+
+          <li className="mb-2 footer-link">
+            Trains (Coming Soon)
+          </li>
+
+          <li className="mb-2 footer-link">
+            Flights (Coming Soon)
+          </li>
+
+        </ul>
+
+      </div>
+
+      {/* Legal */}
+      <div className="col-lg-3 col-md-4">
+
+        <h5 className="fw-bold mb-3">
+          Legal
+        </h5>
+
+        <ul className="list-unstyled">
+
+          <li className="mb-2">
+            <Link
+              to="/terms"
+              className="footer-link text-decoration-none"
+            >
+              Terms of Service
+            </Link>
+          </li>
+
+          <li className="mb-2">
+            <Link
+              to="/privacy-policy"
+              className="footer-link text-decoration-none"
+            >
+              Privacy Policy
+            </Link>
+          </li>
+
+          <li className="mb-2 footer-link">
+            Refunds & Cancellation
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <hr className="footer-divider my-4" />
+
+    <div className="d-md-flex justify-content-between align-items-center">
+
+      <p className="footer-text mb-0">
+        © 2026 AurigaX Technologies Pvt. Ltd.
+        All Rights Reserved.
+      </p>
+
+      <p className="footer-text mb-0">
+        Compare • Save • Travel Smarter
+      </p>
+
+    </div>
+
+  </div>
+</footer>
