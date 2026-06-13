@@ -294,3 +294,10 @@ body.dark-theme .network-svg path {
   width: auto;
   object-fit: contain;
 }
+.logo-track-static img {
+  height: 45px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+}

@@ -281,13 +281,25 @@ function HomeHero() {
       <h4 className="fw-bold">⚡ One Search</h4>
       <p>Multiple providers, one result screen.</p>
     </div>
+    <div className="col-md-4">
+      <h4 className="fw-bold">💰 Best Fare</h4>
+      <p>Find the cheapest option instantly</p>
+    </div>
+    <div className="col-md-4">
+      <h4 className="fw-bold">⏱ ETA Comparison</h4>
+      <p>See arrival times side by side</p>
+    </div>
+    <div className="col-md-4">
+      <h4 className="fw-bold">🔄 No App Switching</h4>
+      <p>Everything in one place</p>
+    </div>
 
   </div>
 </div>
 
 <div className="container py-5">
   <h2 className="text-center fw-bold mb-5">
-    How It Works ?
+    How It Works 
   </h2>
 
   <div className="row text-center g-4">
@@ -357,10 +369,10 @@ function HomeHero() {
           🚌 Bus Operators
         </h4>
 
-        <p>RSRTC</p>
-        <p>Volvo</p>
-        <p>IntrCity</p>
-        <p className="mb-0">RedBus Partners</p>
+        <span className="provider-pill">RSRTC</span>
+<span className="provider-pill">Volvo</span>
+<span className="provider-pill">IntrCity</span>
+<span className="provider-pill">RedBus</span>
 
       </div>
     </div>
@@ -398,7 +410,7 @@ function HomeHero() {
   </p>
 
   <button className="btn btn-primary btn-lg mt-3 px-5">
-    Get Started
+   Compare Providers
   </button>
 </div>
 {/* Stats */}
