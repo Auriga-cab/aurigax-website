@@ -264,7 +264,7 @@ function HomeHero() {
   </p>
 </div>
 
-<div className="container py-5 px-5">
+<div className="container py-5 g-4">
   <div className="row text-center">
 
     <div className="col-md-4">
