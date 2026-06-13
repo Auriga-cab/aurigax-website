@@ -164,3 +164,28 @@ body {
   color: var(--text-color);
 }
 /* ----------- */
+
+.stats-section {
+  background: var(--bg-color);
+}
+
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 28px 20px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+}
+
+.stat-icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+}

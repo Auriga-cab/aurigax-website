@@ -330,12 +330,12 @@ function HomeHero() {
   <div className="logo-marquee mt-3">
     <div className="logo-track">
 
-      <img src={uber} alt="Uber" />
+      {/* <img src={uber} alt="Uber" />
       <img src={rapido} alt="Rapido" />
       <img src={ola} alt="Ola" />
       <img src={namma} alt="Namma" />
       <img src={quickride} alt="QuickRide" />
-      <img src={jugnoo} alt="Jugnoo" />
+      <img src={jugnoo} alt="Jugnoo" /> */}
 
       {/* Duplicate for smooth loop */}
       <img src={uber} alt="Uber" />
