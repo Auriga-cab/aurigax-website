@@ -264,7 +264,7 @@ function HomeHero() {
   </p>
 </div>
 
-<div className="container py-5">
+<div className="container py-5 px-5">
   <div className="row text-center">
 
     <div className="col-md-4">
@@ -369,10 +369,10 @@ function HomeHero() {
           🚌 Bus Operators
         </h4>
 
-        <span className="provider-pill">RSRTC</span>
-<span className="provider-pill">Volvo</span>
-<span className="provider-pill">IntrCity</span>
-<span className="provider-pill">RedBus</span>
+        <p>RSRTC</p>
+        <p>Volvo</p>
+        <p>IntrCity</p>
+        <p className="mb-0">RedBus Partners</p>
 
       </div>
     </div>
@@ -410,7 +410,7 @@ function HomeHero() {
   </p>
 
   <button className="btn btn-primary btn-lg mt-3 px-5">
-   Compare Providers
+    Compare Providers
   </button>
 </div>
 {/* Stats */}
