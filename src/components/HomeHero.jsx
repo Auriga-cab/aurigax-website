@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import uber from "../assets/uber.svg";
 import rapido from "../assets/rapido.png";
 import ola from "../assets/ola.png";
@@ -13,6 +13,8 @@ import redbus from "../assets/redbus.png";
 
 
 function HomeHero() {
+  const [showQR, setShowQR] = useState(false);
+
   const handleDownload = () => {
     const isMobile = /Android|iPhone|iPad|iPod/i.test(
       navigator.userAgent
@@ -24,10 +26,7 @@ function HomeHero() {
         "_blank"
       );
     } else {
-      const modal = new window.bootstrap.Modal(
-        document.getElementById("downloadModal")
-      );
-      modal.show();
+      setShowQR(true);
     }
   };
 
@@ -70,38 +69,55 @@ function HomeHero() {
       </div>
 
       {/* QR Modal */}
-      <div
-        className="modal fade"
-        id="downloadModal"
-        tabIndex="-1"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title">Download AurigaX</h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-              ></button>
-            </div>
+      {showQR && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.5)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 9999,
+          }}
+        >
+          <div
+            style={{
+              background: "#fff",
+              padding: "24px",
+              borderRadius: "12px",
+              textAlign: "center",
+              maxWidth: "350px",
+              width: "90%",
+            }}
+          >
+            <button
+              onClick={() => setShowQR(false)}
+              style={{
+                float: "right",
+                border: "none",
+                background: "none",
+                fontSize: "20px",
+                cursor: "pointer",
+              }}
+            >
+              ×
+            </button>
 
-            <div className="modal-body text-center">
-              <img
-                src="/qr-code.png"
-                alt="QR Code"
-                style={{ width: "220px" }}
-              />
+            <h4>Download AurigaX</h4>
 
-              <p className="mt-3">
-                Scan this QR code to download AurigaX
-              </p>
-            </div>
+            <img
+              src="/qr-code.png"
+              alt="QR Code"
+              style={{ width: "220px" }}
+            />
+
+            <p className="mt-3">
+              Scan this QR code to download AurigaX
+            </p>
           </div>
         </div>
-      </div>
-
+      )}
 
       <div className="network-wrapper">
 
@@ -139,25 +155,7 @@ function HomeHero() {
       <h6 className="section-label">CABS</h6>
 
 
-      {/* <div className="fare-card">
-        <span>🚕 Uber</span>
-        <strong>₹220</strong>
-      </div>
 
-      <div className="fare-card">
-        <span>🛺 Rapido</span>
-        <strong>₹180</strong>
-      </div>
-
-      <div className="fare-card">
-        <span>🚕 Ola</span>
-        <strong>₹250</strong>
-      </div>
-
-      <div className="fare-card">
-        <span>🚌 RSRTC</span>
-        <strong>₹40</strong>
-      </div> */}
       <div className="fare-card">
   <div className="provider-info">
     <img src={uber} alt="Uber" className="provider-logo" />
@@ -246,12 +244,6 @@ function HomeHero() {
 </div>
 </div>
 
-
-{/* <div className="fare-card">
-        <span>🚌 RSRTC</span>
-        <strong>₹40</strong>
-      </div>  */}
-
     </div>
 
   </div>
@@ -298,55 +290,60 @@ function HomeHero() {
   </div>
 </div>
 
-<div className="container text-center py-5">
-  <h2 className="fw-bold mb-3">
-    Why Choose AurigaX?
-  </h2>
-
-  <p
-    className="mx-auto text-muted"
-    style={{ maxWidth: "800px" }}
-  >
-    AurigaX helps you compare ride options from multiple
-    providers in one place. Save time, reduce costs,
-    and choose the best ride instantly without switching
-    between different apps.
-  </p>
-</div>
-
-<div className="container py-5 g-5">
-  <div className="row text-center">
+<div className="container py-5">
+    <h2 className="fw-bold mb-3 text-center"> Why Choose AurigaX? </h2>
+  <div className="row text-center g-4">
 
     <div className="col-md-4">
-      <h4 className="fw-bold">🚕 Compare Ride Apps</h4>
-      <p>Find the best cab or auto fare.</p>
+      <div className="feature-card">
+        <div className="feature-icon">🚕</div>
+        <h4 className="fw-bold">Compare Ride Apps</h4>
+        <p>Find the best cab or auto fare.</p>
+      </div>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">🚌 Compare Bus Operators</h4>
-      <p>Choose the best route and price.</p>
+      <div className="feature-card">
+        <div className="feature-icon">🚌</div>
+        <h4 className="fw-bold">Compare Bus Operators</h4>
+        <p>Choose the best route and price.</p>
+      </div>
     </div>
 
     <div className="col-md-4">
-      <h4 className="fw-bold">⚡ One Search</h4>
-      <p>Multiple providers, one result screen.</p>
+      <div className="feature-card">
+        <div className="feature-icon">⚡</div>
+        <h4 className="fw-bold">One Search</h4>
+        <p>Multiple providers, one result screen.</p>
+      </div>
     </div>
+
     <div className="col-md-4">
-      <h4 className="fw-bold">💰 Best Fare</h4>
-      <p>Find the cheapest option instantly</p>
+      <div className="feature-card">
+        <div className="feature-icon">💰</div>
+        <h4 className="fw-bold">Best Fare</h4>
+        <p>Find the cheapest option instantly.</p>
+      </div>
     </div>
+
     <div className="col-md-4">
-      <h4 className="fw-bold">⏱ ETA Comparison</h4>
-      <p>See arrival times side by side</p>
+      <div className="feature-card">
+        <div className="feature-icon">⏱️</div>
+        <h4 className="fw-bold">ETA Comparison</h4>
+        <p>See arrival times side by side.</p>
+      </div>
     </div>
+
     <div className="col-md-4">
-      <h4 className="fw-bold">🔄 No App Switching</h4>
-      <p>Everything in one place</p>
+      <div className="feature-card">
+        <div className="feature-icon">🔄</div>
+        <h4 className="fw-bold">No App Switching</h4>
+        <p>Everything in one place.</p>
+      </div>
     </div>
 
   </div>
 </div>
-
 <div className="container py-5">
   <section id="how-it-works" className="text-center">
   <h2>How it works</h2>
