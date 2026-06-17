@@ -201,7 +201,7 @@ body {
   transform: translateY(-3px);
 }
 body.light-theme .footer-social {
-  color: #111827;
+  color: #ffffff;
 }
 
 body.dark-theme .footer-social {

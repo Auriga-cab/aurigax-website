@@ -13,50 +13,95 @@ import redbus from "../assets/redbus.png";
 
 
 function HomeHero() {
+  const handleDownload = () => {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(
+      navigator.userAgent
+    );
+
+    if (isMobile) {
+      window.open(
+        "https://play.google.com/store/apps/details?id=com.aurigax.app",
+        "_blank"
+      );
+    } else {
+      const modal = new window.bootstrap.Modal(
+        document.getElementById("downloadModal")
+      );
+      modal.show();
+    }
+  };
+
   return (
     <section className="hero-section">
-
       <div className="container text-center pt-5">
+        <h1 className="hero-title">
+          One Search.
+          <br />
+          <span className="text-primary">
+            Every Way to Travel.
+          </span>
+        </h1>
 
-                 <h1 className="hero-title">
-                      One Search.
-                      <br />
-                      <span className="text-primary">
-                        Every Way to Travel.
-                      </span>
-                    </h1>
-                    
-                    <p className="hero-desc">
-                      Compare cabs, autos and buses across multiple providers in one place.
-                      Trains and flights coming soon.
-                    </p>
+        <p className="hero-desc">
+          Compare cabs, autos and buses across multiple providers in one place.
+          Trains and flights coming soon.
+        </p>
 
         <div className="d-flex justify-content-center gap-3 mt-4">
-          <button className="btn btn-primary px-4 py-3">
+          <button
+            className="btn btn-primary px-4 py-3"
+            onClick={handleDownload}
+          >
             Download now
           </button>
 
-          <button className="btn btn-outline-dark px-4 py-3">
+          <button
+            onClick={() => {
+              document.getElementById("how-it-works")?.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }}
+            className="btn btn-light px-4 py-3 border shadow-sm"
+          >
             See how it works
           </button>
         </div>
-
-        {/* Logos */}
-
-        {/* <div className="logo-row">
-
-             <img src={uber} alt="" />
-            
-             <img src={rapido} alt="" />
-             <img src={ola} alt="" />
-             <img src={namma} alt="" />
-             <img src={quickride} alt="" />
-             <img src={bgarattaxi} alt="" />
-             <img src={jugnoo} alt="" />
-
-        </div> */}
-
       </div>
+
+      {/* QR Modal */}
+      <div
+        className="modal fade"
+        id="downloadModal"
+        tabIndex="-1"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Download AurigaX</h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div className="modal-body text-center">
+              <img
+                src="/qr-code.png"
+                alt="QR Code"
+                style={{ width: "220px" }}
+              />
+
+              <p className="mt-3">
+                Scan this QR code to download AurigaX
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div className="network-wrapper">
 
@@ -303,9 +348,9 @@ function HomeHero() {
 </div>
 
 <div className="container py-5">
-  <h2 className="text-center fw-bold mb-5">
-    How It Works 
-  </h2>
+  <section id="how-it-works" className="text-center">
+  <h2>How it works</h2>
+</section>
 
   <div className="row text-center g-4">
 
