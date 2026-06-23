@@ -1,4 +1,6 @@
 import React from "react";
+import umesh from "../assets/umesh.png";
+
 
 const teamMembers = [
   {
@@ -11,7 +13,7 @@ const teamMembers = [
     name: "Nishant Gupta",
     role: "Co-Founder & CTO",
     image:
-      "https://media.licdn.com/dms/image/v2/C4E03AQGNQeTztzwSCg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1653574376592?e=1781740800&v=beta&t=7WYw8vy1pO7ajPp3whPv--4L6HIN5WudkzGsZj8lZr0",
+      "https://media.licdn.com/dms/image/v2/C4E03AQGNQeTztzwSCg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1653574376592?e=1783555200&v=beta&t=BXkPwIbDqwUUKZFOJUlFjpoIIOKKSQswAO6ashtsHrg",
     linkedin: "https://www.linkedin.com/in/nishantgupta95/",
   },
   {
@@ -23,9 +25,12 @@ const teamMembers = [
   {
     name: "Umesh Kumawat",
     role: "JN. Software Engineer",
-    image: "https://via.placeholder.com/300x300",
+    image: umesh,
     linkedin: "https://linkedin.com",
   },
+
+
+
 ];
 
 function TeamSection() {

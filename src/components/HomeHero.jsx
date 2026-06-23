@@ -460,10 +460,18 @@ function HomeHero() {
    Compare cabs, autos and buses in one place and choose the smartest way to travel.
   </p>
 
-  <button className="btn btn-primary btn-lg mt-3 px-5">
-    Compare Providers
-  </button>
-</div>
+  <button
+  className="btn btn-primary btn-lg mt-3 px-5"
+  onClick={() => {
+    document.querySelector(".network-wrapper")?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  }}
+>
+  Compare Providers
+</button>
+</div>  
 {/* Stats */}
 {/* <div className="container py-5">
   <div className="row text-center">

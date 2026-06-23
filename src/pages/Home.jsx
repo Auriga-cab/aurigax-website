@@ -42,7 +42,7 @@ function Home() {
 
   <meta property="og:type" content="website" />
 </Helmet>
-
+ 
       <HomeHero />
       <StatsSection />
       <Testimonials />
