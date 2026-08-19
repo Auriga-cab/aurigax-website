@@ -25,10 +25,16 @@ const teamMembers = [
   {
     name: "Umesh Kumawat",
     role: "JN. Software Engineer",
-    image: umesh,
+    // image: umesh,
     linkedin: "https://linkedin.com",
   },
 
+  // {
+  //   name: "Nandini ",
+  //   role: "JN. Software Engineer",
+  //   image:"https://via.placeholder.com/300x300" ,
+  //   linkedin: "https://linkedin.com",
+  // },
 
 
 ];
